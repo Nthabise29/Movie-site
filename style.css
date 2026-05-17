@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+    }
 
+/*banner-wrap styles*/
 
 .banner-wrap{
-background-image:url(./assets/Banner\ Wrap\ BG.jpg) ;
+background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5),rgba(0,0,0,1)),
+                url(./assets/Banner\ Wrap\ BG.jpg) ;
 background-size: cover;
 color: white;
 height: 100vh;
+
 }
 
 .navbar {
@@ -27,16 +30,119 @@ height: 100vh;
     color: white;
     padding: 7px 20px;
     border-radius: 3px;
+    font-weight: 400;
 }
 
 .navbar img{
     height: 2.5rem;
 }
 
-.bannertext{
+.bannertext, .get-started-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height:calc(100vh - 45px);
+    
+}
+
+.bannertext h1{
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+
+.bannertext button{
+    background-color: rgb(229 9 20);
+    color: white;
+    padding: 12px 24px;
+   
+}
+
+
+.get-started-form{
+    padding-top: 16px;
+}
+
+.controls > input{
+     padding: 12px 24px;
+}
+
+
+/*mid-section styles*/
+
+.mid-section{
+    background-color: black;
+    padding: 0 10vw;
+}
+
+.mid-section h2 {
+    color: white;
+}
+
+div span {
+    -webkit-text-stroke: 1px white;
+    font-weight: 500;
+    font-size: 100px;
+    position: relative;
+    right: 25px;
+}
+
+.movies{
+    display:flex;
+    justify-content: space-between;
+}
+
+div.card {
+    width: 214px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#show1{
+    background-image: url(./assets/show1.webp);
+    border-radius: 3%;
+}
+
+#show2{
+    background-image: url(./assets/show2.webp);
+    border-radius: 3%;
+}
+
+#show3{
+    background-image: url(./assets/show3.webp);
+    border-radius: 3%;
+}
+
+#show4{
+    background-image: url(./assets/show4.webp);
+    border-radius: 3%;
+}
+
+#show5{
+    background-image: url(./assets/show5.webp);
+    border-radius: 3%;
+}
+
+/*More Reasons styling*/
+
+.reasons{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.reasons > .card{
+    width: 340px;
+    height: 270px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3%;
 }
