@@ -2,5 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
+
+.banner-wrap{
+background-image:url(./assets/Banner\ Wrap\ BG.jpg) ;
+background-size: cover;
+color: white;
+height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 80px 0px 80px;
+    height:45px;
+    
+}
+
+.navbar > a{
+    background-color:rgb(229 9 20);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 3px;
+}
+
+.navbar img{
+    height: 2.5rem;
+}
+
+.bannertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:calc(100vh - 45px);
+}
