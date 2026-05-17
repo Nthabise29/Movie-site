@@ -136,13 +136,21 @@ div.card {
     display: flex;
     justify-content: space-between;
     color: white;
+    gap: 20px;
 }
 
 .reasons > .card{
-    width: 340px;
-    height: 270px;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-    flex-direction: column;
-    align-items: flex-start;
     border-radius: 3%;
+    width: 320px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+
+
+
+
+
