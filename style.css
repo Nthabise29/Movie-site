@@ -1,9 +1,15 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     }
+
+body{
+  font-family: "Roboto", sans-serif;
+  }
 
 /*banner-wrap styles*/
 
@@ -12,8 +18,7 @@ background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5),rgba(0,0,0,1)),
                 url(./assets/Banner\ Wrap\ BG.jpg) ;
 background-size: cover;
 color: white;
-height: 100vh;
-
+min-height: 100vh;
 }
 
 .navbar {
@@ -31,19 +36,21 @@ height: 100vh;
     padding: 7px 20px;
     border-radius: 3px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .navbar img{
     height: 2.5rem;
 }
 
-.bannertext, .get-started-form{
+.bannertext{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:calc(100vh - 45px);
-    
+    text-align: center;
+    position: relative;
+    height: 70vh;
 }
 
 .bannertext h1{
@@ -56,6 +63,7 @@ height: 100vh;
     background-color: rgb(229 9 20);
     color: white;
     padding: 12px 24px;
+    font-weight: 400;
    
 }
 
@@ -91,12 +99,18 @@ height: 100vh;
     color: white;
 }
 
+.trending-shows{
+    margin-top: 90px;
+}
+
+
 div span {
     -webkit-text-stroke: 1px white;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 10rem;
     position: relative;
     right: 25px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .movies{
@@ -143,6 +157,12 @@ div.card {
 
 /*More Reasons styling*/
 
+.why{
+    margin-top: 90px;
+}
+
+
+
 .reasons{
     display: flex;
     justify-content: space-between;
@@ -161,10 +181,29 @@ div.card {
     
 }
 
+.reasons section{
+    margin-left: 12px;
+}
+
+
+
+.reasons h3{
+    padding-top: 15px;
+}
+
+
+.reasons p{
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+
 /*FAQ Styles*/
 
 .faq{
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 90px;
 }
 
 details{
@@ -173,14 +212,56 @@ details{
     margin-bottom: 7px;
 }
 
-details p{
-    border-top: 1px solid black;
+
+.faq-item{
+    background-color: #2d2d2d;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-weight: 100;
 }
+
+.faq-item summary{
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    list-style: none;          /* removes the default arrow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+
 
 /*get started styles*/
 
 .get-started{
     color: white;
+    margin-top: 90px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+   }
+
+.get-started button{
+    background-color: rgb(229 9 20);
+    color: white;
+    font-weight: 400;
+    padding: 7px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.get-started input{
+    padding: 7px 20px;
 }
 
 
@@ -189,13 +270,28 @@ details p{
 /*footer styles*/
 .footer{
     background-color: black;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     padding: 0 10vw;
+    
+}
+
+
+.footer a{
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.7) ;
 }
 
 .footer-items ul{
     list-style-type: none;
     }
+
+.footer-items li{
+    cursor: pointer;
+    line-height: 2;
+}
+
+
+
 
 .footer-items{
     display: grid;
@@ -203,19 +299,27 @@ details p{
     gap: 20px;
     width: 100%;
     text-decoration: underline;
+    padding-top: 50px;
 }
 
 .footer > .language{
     margin-top: 30px;
     padding-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.language option {
-    color: white;
+.language select {
+    color: rgba(255, 255, 255, 0.7);
     background-color: black;
+    border: none;
 }
 
-.declarations p,
-.declarations span {
-    font-size: 0.81rem !important;
+
+.language > .material-icons{
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.declaration{
+    padding-bottom: 30px;
 }
