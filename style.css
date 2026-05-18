@@ -71,6 +71,17 @@ height: 100vh;
 
 /*mid-section styles*/
 
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
 .mid-section{
     background-color: black;
     padding: 0 10vw;
@@ -187,12 +198,24 @@ details p{
     }
 
 .footer-items{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     width: 100%;
     text-decoration: underline;
 }
 
-.language{
+.footer > .language{
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
 
+.language option {
+    color: white;
+    background-color: black;
+}
+
+.declarations p,
+.declarations span {
+    font-size: 0.81rem !important;
 }
